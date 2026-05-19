@@ -67,6 +67,7 @@ const featuredCards = [
   {
     img: '/assets/dog-portrait.png',
     alt: 'Pet portrait - spaniel dog',
+    imgPosition: 'top',
     icon: <PawIcon />,
     title: 'Pet Portraits',
     desc: 'Custom pet portraits that capture their spirit.',
@@ -74,13 +75,15 @@ const featuredCards = [
   {
     img: '/assets/male-portrait.png',
     alt: 'Portrait study',
+    imgPosition: 'center',
     icon: <PortraitIcon />,
     title: 'Portrait Studies',
     desc: 'Watercolor portraits full of character and emotion.',
   },
   {
-    img: '/assets/horse-painting.png',
-    alt: 'Horse painting',
+    img: '/assets/distressed-cardboard-dog.png',
+    alt: 'Mixed media distressed cardboard dog',
+    imgPosition: 'center',
     icon: <BrushIcon />,
     title: 'Mixed Media',
     desc: 'Bold, expressive paintings with vibrant energy.',
@@ -88,6 +91,7 @@ const featuredCards = [
   {
     img: '/assets/red-portrait.png',
     alt: 'Commission painting',
+    imgPosition: 'top',
     icon: <HeartIcon />,
     title: 'Commissions',
     desc: 'Personalized artwork made just for you.',
@@ -159,7 +163,7 @@ export default function Home() {
           <div className="featured-work-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '1.25rem' }}>
             {featuredCards.map((card, i) => (
               <div key={i} className="artwork-card">
-                <img src={card.img} alt={card.alt} />
+                <img src={card.img} alt={card.alt} style={{ objectPosition: card.imgPosition || 'center' }} />
                 <div className="artwork-card-body">
                   <div className="artwork-card-icon">{card.icon}</div>
                   <div className="artwork-card-title">{card.title}</div>

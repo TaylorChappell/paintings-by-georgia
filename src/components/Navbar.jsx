@@ -1,18 +1,31 @@
 import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 
-const MenuIcon = () => (
+const HamburgerIcon = ({ open }) => (
   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" aria-hidden="true">
-    <line x1="3" y1="6" x2="21" y2="6"/>
-    <line x1="3" y1="12" x2="21" y2="12"/>
-    <line x1="3" y1="18" x2="21" y2="18"/>
-  </svg>
-)
-
-const CloseIcon = () => (
-  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" aria-hidden="true">
-    <line x1="18" y1="6" x2="6" y2="18"/>
-    <line x1="6" y1="6" x2="18" y2="18"/>
+    <line
+      x1="3" y1="6" x2="21" y2="6"
+      style={{
+        transformOrigin: '12px 6px',
+        transform: open ? 'translateY(6px) rotate(45deg)' : 'none',
+        transition: 'transform 0.3s ease',
+      }}
+    />
+    <line
+      x1="3" y1="12" x2="21" y2="12"
+      style={{
+        opacity: open ? 0 : 1,
+        transition: 'opacity 0.2s ease',
+      }}
+    />
+    <line
+      x1="3" y1="18" x2="21" y2="18"
+      style={{
+        transformOrigin: '12px 18px',
+        transform: open ? 'translateY(-6px) rotate(-45deg)' : 'none',
+        transition: 'transform 0.3s ease',
+      }}
+    />
   </svg>
 )
 
@@ -52,7 +65,7 @@ export default function Navbar() {
           aria-label={menuOpen ? 'Close menu' : 'Open menu'}
           aria-expanded={menuOpen}
         >
-          {menuOpen ? <CloseIcon /> : <MenuIcon />}
+          <HamburgerIcon open={menuOpen} />
         </button>
       </div>
 
