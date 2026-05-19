@@ -52,7 +52,7 @@ export default function Footer() {
         <div className="footer-links">
           <div className="footer-link-item">
             <MailSmIcon />
-            <a href="mailto:hello@paintingsbygeorgia.com">hello@paintingsbygeorgia.com</a>
+            <a href="mailto:paintingsbygeorgiauk@outlook.com">paintingsbygeorgiauk@outlook.com</a>
           </div>
           <div className="footer-link-item">
             <ShopIcon />
@@ -67,7 +67,7 @@ export default function Footer() {
           <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer" className="social-btn" aria-label="Pinterest">
             <PinterestIcon />
           </a>
-          <a href="mailto:hello@paintingsbygeorgia.com" className="social-btn" aria-label="Email">
+          <a href="mailto:paintingsbygeorgiauk@outlook.com" className="social-btn" aria-label="Email">
             <EmailIcon />
           </a>
         </div>

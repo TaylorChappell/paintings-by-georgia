@@ -38,7 +38,7 @@ const heroImages = [
   { url: '/assets/dog-portrait.png', alt: 'Dog portrait commission' },
   { url: '/assets/red-portrait.png', alt: 'Portrait commission' },
   { url: '/assets/horse-painting.png', alt: 'Horse painting commission' },
-  { url: '/assets/male-portrait.png', alt: 'Male portrait commission' },
+  { url: '/assets/MeganFox-Portrait.png', alt: 'Megan Fox portrait' },
 ]
 
 const steps = [
@@ -56,8 +56,8 @@ const commissionOptions = [
     desc: 'Hand painted portraits that capture your pet\'s spirit and personality.',
   },
   {
-    img: '/assets/male-portrait.png',
-    alt: 'Portrait study example',
+    img: '/assets/MeganFox-Portrait.png',
+    alt: 'Megan Fox portrait example',
     title: 'Portrait',
     desc: 'Expressive portrait studies focused on character and feeling.',
   },
@@ -160,7 +160,7 @@ export default function Commissions() {
             </div>
             <div className="how-images">
               <img src="/assets/dog-portrait.png" alt="Dog portrait" />
-              <img src="/assets/male-portrait.png" alt="Male portrait" />
+              <img src="/assets/MeganFox-Portrait.png" alt="Megan Fox portrait" />
               <img src="/assets/horse-painting.png" alt="Horse painting" />
               <img src="/assets/red-portrait.png" alt="Portrait study" />
             </div>

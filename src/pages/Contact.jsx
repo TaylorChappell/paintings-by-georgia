@@ -203,8 +203,8 @@ export default function Contact() {
                 <div className="contact-detail-icon"><MailIcon /></div>
                 <div>
                   <div className="contact-detail-label">Email</div>
-                  <a href="mailto:hello@paintingsbygeorgia.com" className="contact-detail-value" style={{ color: 'var(--text-muted)' }}>
-                    hello@paintingsbygeorgia.com
+                  <a href="mailto:paintingsbygeorgiauk@outlook.com" className="contact-detail-value" style={{ color: 'var(--text-muted)' }}>
+                    paintingsbygeorgiauk@outlook.com
                   </a>
                 </div>
               </div>

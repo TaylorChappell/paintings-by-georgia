@@ -60,7 +60,7 @@ const heroImages = [
   { url: '/assets/dog-portrait.png', alt: 'Watercolour dog portrait' },
   { url: '/assets/red-portrait.png', alt: 'Portrait study in red' },
   { url: '/assets/horse-painting.png', alt: 'Equestrian painting' },
-  { url: '/assets/male-portrait.png', alt: 'Male portrait study' },
+  { url: '/assets/MeganFox-Portrait.png', alt: 'Megan Fox portrait' },
 ]
 
 const featuredCards = [
@@ -72,8 +72,8 @@ const featuredCards = [
     desc: 'Custom pet portraits that capture their spirit.',
   },
   {
-    img: '/assets/male-portrait.png',
-    alt: 'Portrait study',
+    img: '/assets/MeganFox-Portrait.png',
+    alt: 'Megan Fox portrait',
     icon: <PortraitIcon />,
     title: 'Portraits',
     desc: 'Watercolor portraits full of character and emotion.',

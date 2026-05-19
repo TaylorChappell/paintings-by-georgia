@@ -3,16 +3,19 @@ import { Link } from 'react-router-dom'
 import FloralDecor from '../components/FloralDecor'
 
 const portfolioItems = [
-  { src: '/assets/dog-portrait.png', alt: 'Watercolour spaniel dog portrait', category: 'Pets', height: 'tall' },
-  { src: '/assets/horse-painting.png', alt: 'Equestrian jockey and horse painting', category: ['Pets', 'Mixed Media'], height: 'tall' },
-  { src: '/assets/red-portrait.png', alt: 'Portrait study on red background', category: 'Portraits', height: 'tall' },
-  { src: '/assets/male-portrait.png', alt: 'Male portrait study', category: 'Portraits', height: 'tall' },
-  { src: '/assets/distressed-cardboard-dog.png', alt: 'Dog portrait on distressed cardboard texture', category: ['Pets', 'Mixed Media'], height: 'medium' },
+  { src: '/assets/dog-portrait.png', alt: 'Watercolour spaniel dog portrait', category: 'Pets' },
+  { src: '/assets/horse-painting.png', alt: 'Equestrian jockey and horse painting', category: ['Pets', 'Mixed Media'] },
+  { src: '/assets/red-portrait.png', alt: 'Portrait study on red background', category: 'Portraits' },
+  { src: '/assets/MeganFox-Portrait.png', alt: 'Megan Fox portrait', category: 'Portraits' },
+  { src: '/assets/male-portrait.png', alt: 'Male portrait study', category: 'Portraits' },
+  { src: '/assets/distressed-cardboard-dog.png', alt: 'Dog portrait on distressed cardboard texture', category: ['Pets', 'Mixed Media'] },
+  { src: '/assets/Daredevil-Portrait.png', alt: 'Daredevil portrait on canvas', category: ['Portraits', 'Canvases'] },
+  { src: '/assets/Parrot.png', alt: 'Parrot painting', category: 'Pets' },
 ]
 
 export default function Portfolio() {
   const [activeFilter, setActiveFilter] = useState('All')
-  const filters = ['All', 'Pets', 'Portraits', 'Mixed Media']
+  const filters = ['All', 'Pets', 'Portraits', 'Mixed Media', 'Canvases']
 
   const filtered = activeFilter === 'All'
     ? portfolioItems
@@ -21,6 +24,13 @@ export default function Portfolio() {
           ? item.category.includes(activeFilter)
           : item.category === activeFilter
       )
+
+  // Distribute items across 3 columns
+  const col1 = filtered.filter((_, i) => i % 3 === 0)
+  const col2 = filtered.filter((_, i) => i % 3 === 1)
+  const col3 = filtered.filter((_, i) => i % 3 === 2)
+
+  const heights = [380, 260, 340, 300, 380, 260, 340, 300]
 
   return (
     <div style={{ position: 'relative', overflow: 'hidden' }}>
@@ -33,7 +43,7 @@ export default function Portfolio() {
           <h1 className="heading-xl underline-accent">Portfolio</h1>
           <div style={{ width: 80, height: 2.5, background: 'var(--rose)', borderRadius: 2, margin: '1.4rem 0 1.2rem' }} />
           <p style={{ color: 'var(--text-muted)', fontSize: '1rem', maxWidth: 460 }}>
-            A curated collection of pet portraits, portrait studies, and expressive pieces.
+            A curated collection of pet portraits, portraits, and expressive pieces.
           </p>
 
           <div className="filter-buttons">
@@ -57,40 +67,30 @@ export default function Portfolio() {
           <div className="portfolio-grid">
             {/* Column 1 */}
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
-              {filtered.slice(0, 1).map((item, i) => (
-                <div key={i} className="portfolio-item tall">
-                  <img src={item.src} alt={item.alt} style={{ width: '100%', height: 380, objectFit: 'cover' }} />
+              {col1.map((item, i) => (
+                <div key={i} className="portfolio-item">
+                  <img src={item.src} alt={item.alt} style={{ width: '100%', height: heights[i * 3] || 320, objectFit: 'cover' }} />
                 </div>
               ))}
-              {filtered.length > 3 && (
-                <div className="portfolio-item medium">
-                  <img src={filtered[3].src} alt={filtered[3].alt} style={{ width: '100%', height: 260, objectFit: 'cover' }} />
-                </div>
-              )}
             </div>
 
             {/* Column 2 */}
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
-              {filtered.slice(1, 2).map((item, i) => (
-                <div key={i} className="portfolio-item tall">
-                  <img src={item.src} alt={item.alt} style={{ width: '100%', height: 420, objectFit: 'cover' }} />
+              {col2.map((item, i) => (
+                <div key={i} className="portfolio-item">
+                  <img src={item.src} alt={item.alt} style={{ width: '100%', height: heights[i * 3 + 1] || 320, objectFit: 'cover' }} />
                 </div>
               ))}
-              {filtered.length > 4 && (
-                <div className="portfolio-item short">
-                  <img src={filtered[4].src} alt={filtered[4].alt} style={{ width: '100%', height: 200, objectFit: 'cover' }} />
-                </div>
-              )}
             </div>
 
             {/* Column 3 */}
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
-              {filtered.slice(2, 3).map((item, i) => (
-                <div key={i} className="portfolio-item tall">
-                  <img src={item.src} alt={item.alt} style={{ width: '100%', height: 380, objectFit: 'cover' }} />
+              {col3.map((item, i) => (
+                <div key={i} className="portfolio-item">
+                  <img src={item.src} alt={item.alt} style={{ width: '100%', height: heights[i * 3 + 2] || 320, objectFit: 'cover' }} />
                 </div>
               ))}
-              {/* Featured piece card */}
+              {/* Featured piece card always in col 3 */}
               <div className="featured-piece-card">
                 <div style={{ position: 'absolute', top: -10, right: -10, opacity: 0.25 }} aria-hidden="true">
                   <img src="/assets/flower-corner.png" alt="" style={{ width: 100, height: 100, objectFit: 'contain' }} />
