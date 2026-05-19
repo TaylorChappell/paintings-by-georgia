@@ -36,7 +36,7 @@ const BoxIcon = () => (
 
 const heroImages = [
   { url: '/assets/dog-portrait.png', alt: 'Dog portrait commission' },
-  { url: '/assets/red-portrait.png', alt: 'Portrait commission' },
+  { url: '/assets/distressed-cardboard-dog.png', alt: 'Portrait commission' },
   { url: '/assets/horse-painting.png', alt: 'Horse painting commission' },
   { url: '/assets/MeganFox-Portrait.png', alt: 'Megan Fox portrait' },
 ]
