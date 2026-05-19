@@ -6,7 +6,6 @@ import Portfolio from './pages/Portfolio'
 import Commissions from './pages/Commissions'
 import About from './pages/About'
 import Contact from './pages/Contact'
-import Etsy from './pages/Etsy'
 
 function App() {
   return (
@@ -19,7 +18,6 @@ function App() {
           <Route path="/commissions" element={<Commissions />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/etsy" element={<Etsy />} />
         </Routes>
       </main>
       <Footer />

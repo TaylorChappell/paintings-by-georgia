@@ -38,7 +38,6 @@ export default function Navbar() {
     { to: '/commissions', label: 'Commissions' },
     { to: '/about', label: 'About' },
     { to: '/contact', label: 'Contact' },
-    { to: '/etsy', label: 'Etsy' },
   ]
 
   return (
