@@ -27,9 +27,9 @@ const HeartIcon = () => (
 
 const heroImages = [
   { url: '/assets/dog-portrait.png', alt: 'Dog portrait painting' },
-  { url: '/assets/red-portrait.png', alt: 'Portrait painting' },
+  { url: '/assets/Daredevil-Portrait.png', alt: 'Portrait painting' },
   { url: '/assets/horse-painting.png', alt: 'Horse painting' },
-  { url: '/assets/male-portrait.png', alt: 'Male portrait painting' },
+  { url: '/assets/MeganFox-Portrait.png', alt: 'Male portrait painting' },
 ]
 
 const infoCols = [

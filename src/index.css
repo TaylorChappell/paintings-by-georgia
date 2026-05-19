@@ -484,13 +484,13 @@ button {
    ============================================================ */
 
 /* Pet Portraits */
-.featured-work-grid .artwork-card:nth-child(1) img { object-position: center 50%; }
+.featured-work-grid .artwork-card:nth-child(1) img { object-position: center 40%; }
 /* Portraits */
 .featured-work-grid .artwork-card:nth-child(2) img { object-position: center 50%; }
 /* Mixed Media */
-.featured-work-grid .artwork-card:nth-child(3) img { object-position: center 50%; }
+.featured-work-grid .artwork-card:nth-child(3) img { object-position: center 80%; }
 /* Commissions */
-.featured-work-grid .artwork-card:nth-child(4) img { object-position: center 50%; }
+.featured-work-grid .artwork-card:nth-child(4) img { object-position: center 60%; }
 
 .artwork-card-body {
   padding: 1.2rem 1.4rem 1.4rem;

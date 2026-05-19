@@ -61,10 +61,10 @@ export default function Footer() {
         </div>
 
         <div className="footer-social">
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="social-btn" aria-label="Instagram">
+          <a href="https://instagram.com/Paintingsbygeorgiauk" target="_blank" rel="noopener noreferrer" className="social-btn" aria-label="Instagram">
             <InstagramIcon />
           </a>
-          <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer" className="social-btn" aria-label="Pinterest">
+          <a href="https://pinterest.com/Paintingsbygeorgiauk" target="_blank" rel="noopener noreferrer" className="social-btn" aria-label="Pinterest">
             <PinterestIcon />
           </a>
           <a href="mailto:paintingsbygeorgiauk@outlook.com" className="social-btn" aria-label="Email">

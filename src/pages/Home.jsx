@@ -58,7 +58,7 @@ const GiftIcon = () => (
 
 const heroImages = [
   { url: '/assets/dog-portrait.png', alt: 'Watercolour dog portrait' },
-  { url: '/assets/red-portrait.png', alt: 'Portrait study in red' },
+  { url: '/assets/Parrot.png', alt: 'Parrot painting' },
   { url: '/assets/horse-painting.png', alt: 'Equestrian painting' },
   { url: '/assets/MeganFox-Portrait.png', alt: 'Megan Fox portrait' },
 ]
@@ -86,8 +86,8 @@ const featuredCards = [
     desc: 'Bold, expressive paintings with vibrant energy.',
   },
   {
-    img: '/assets/red-portrait.png',
-    alt: 'Commission painting',
+    img: '/assets/Daredevil-Portrait.png',
+    alt: 'Daredevil portrait commission',
     icon: <HeartIcon />,
     title: 'Commissions',
     desc: 'Personalized artwork made just for you.',
