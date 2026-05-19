@@ -143,7 +143,7 @@ export default function Etsy() {
               </p>
 
               <a
-                href="https://etsy.com/shop/PaintingsByGeorgia"
+                href="https://etsy.com/shop/PaintingsByGeorgiaUK"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary"
@@ -155,8 +155,8 @@ export default function Etsy() {
 
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--rose)', fontSize: '0.9rem' }}>
                 <EtsyCircleIcon />
-                <a href="https://etsy.com/shop/PaintingsByGeorgia" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--rose)' }}>
-                  etsy.com/shop/PaintingsByGeorgia
+                <a href="https://etsy.com/shop/PaintingsByGeorgiaUK" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--rose)' }}>
+                  etsy.com/shop/PaintingsByGeorgiaUK
                 </a>
               </div>
             </div>
@@ -186,7 +186,7 @@ export default function Etsy() {
                   <p className="product-card-desc">{prod.desc}</p>
                   <div className="product-card-price">{prod.price}</div>
                   <a
-                    href="https://etsy.com/shop/PaintingsByGeorgia"
+                    href="https://etsy.com/shop/PaintingsByGeorgiaUK"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn-outline"
@@ -263,7 +263,7 @@ export default function Etsy() {
 
           <div style={{ borderTop: '1px solid var(--border)', marginTop: '2.5rem', paddingTop: '1.5rem', display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: '0.75rem' }}>
             <span style={{ fontSize: '0.82rem', color: 'var(--text-muted)' }}>hello@paintingsbygeorgia.com</span>
-            <span style={{ fontSize: '0.82rem', color: 'var(--text-muted)' }}>etsy.com/shop/PaintingsByGeorgia</span>
+            <span style={{ fontSize: '0.82rem', color: 'var(--text-muted)' }}>etsy.com/shop/PaintingsByGeorgiaUK</span>
           </div>
         </div>
       </section>

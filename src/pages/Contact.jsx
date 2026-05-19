@@ -219,8 +219,8 @@ export default function Contact() {
                 <div className="contact-detail-icon"><ShopIcon /></div>
                 <div>
                   <div className="contact-detail-label">Etsy shop</div>
-                  <a href="https://etsy.com/shop/PaintingsByGeorgia" target="_blank" rel="noopener noreferrer" className="contact-detail-value" style={{ color: 'var(--text-muted)' }}>
-                    etsy.com/shop/<br />PaintingsByGeorgia
+                  <a href="https://etsy.com/shop/PaintingsByGeorgiaUK" target="_blank" rel="noopener noreferrer" className="contact-detail-value" style={{ color: 'var(--text-muted)' }}>
+                    etsy.com/shop/<br />PaintingsByGeorgiaUK
                   </a>
                 </div>
               </div>

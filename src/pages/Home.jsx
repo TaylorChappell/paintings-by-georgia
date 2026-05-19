@@ -135,7 +135,7 @@ export default function Home() {
               </p>
               <div className="hero-btn-group" style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
                 <Link to="/portfolio" className="btn-primary">View Portfolio</Link>
-                <a href="https://etsy.com/shop/PaintingsByGeorgia" target="_blank" rel="noopener noreferrer" className="btn-outline">Shop on Etsy</a>
+                <a href="https://etsy.com/shop/PaintingsByGeorgiaUK" target="_blank" rel="noopener noreferrer" className="btn-outline">Shop on Etsy</a>
               </div>
             </div>
 

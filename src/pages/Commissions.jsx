@@ -58,7 +58,7 @@ const commissionOptions = [
   {
     img: '/assets/male-portrait.png',
     alt: 'Portrait study example',
-    title: 'Portrait Study',
+    title: 'Portrait',
     desc: 'Expressive portrait studies focused on character and feeling.',
   },
   {

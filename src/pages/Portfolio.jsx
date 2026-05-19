@@ -4,10 +4,10 @@ import FloralDecor from '../components/FloralDecor'
 
 const portfolioItems = [
   { src: '/assets/dog-portrait.png', alt: 'Watercolour spaniel dog portrait', category: 'Pets', height: 'tall' },
-  { src: '/assets/horse-painting.png', alt: 'Equestrian jockey and horse painting', category: 'Pets', height: 'tall' },
+  { src: '/assets/horse-painting.png', alt: 'Equestrian jockey and horse painting', category: ['Pets', 'Mixed Media'], height: 'tall' },
   { src: '/assets/red-portrait.png', alt: 'Portrait study on red background', category: 'Portraits', height: 'tall' },
   { src: '/assets/male-portrait.png', alt: 'Male portrait study', category: 'Portraits', height: 'tall' },
-  { src: '/assets/distressed-cardboard-dog.png', alt: 'Dog portrait on distressed cardboard texture', category: 'Pets', height: 'medium' },
+  { src: '/assets/distressed-cardboard-dog.png', alt: 'Dog portrait on distressed cardboard texture', category: ['Pets', 'Mixed Media'], height: 'medium' },
 ]
 
 export default function Portfolio() {
@@ -16,7 +16,11 @@ export default function Portfolio() {
 
   const filtered = activeFilter === 'All'
     ? portfolioItems
-    : portfolioItems.filter(item => item.category === activeFilter)
+    : portfolioItems.filter(item =>
+        Array.isArray(item.category)
+          ? item.category.includes(activeFilter)
+          : item.category === activeFilter
+      )
 
   return (
     <div style={{ position: 'relative', overflow: 'hidden' }}>
