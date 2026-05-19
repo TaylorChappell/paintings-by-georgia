@@ -479,6 +479,19 @@ button {
   flex-shrink: 0;
 }
 
+/* ============================================================
+   FEATURED WORK CARD IMAGE POSITIONS - DESKTOP
+   ============================================================ */
+
+/* Pet Portraits */
+.featured-work-grid .artwork-card:nth-child(1) img { object-position: center 40%; }
+/* Portrait Studies */
+.featured-work-grid .artwork-card:nth-child(2) img { object-position: center 60%; }
+/* Mixed Media */
+.featured-work-grid .artwork-card:nth-child(3) img { object-position: center 78%; }
+/* Commissions */
+.featured-work-grid .artwork-card:nth-child(4) img { object-position: center 65%; }
+
 .artwork-card-body {
   padding: 1.2rem 1.4rem 1.4rem;
   display: flex;
@@ -1222,13 +1235,13 @@ button {
   .etsy-footer-grid { grid-template-columns: 1fr !important; }
 
   /* Pet Portraits - show face, bring image up */
-  .featured-work-grid .artwork-card:nth-child(1) img {
-    object-position: center 12%;
-  }
-  /* Commissions - show top of image */
-  .featured-work-grid .artwork-card:nth-child(4) img {
-    object-position: center top;
-  }
+  .featured-work-grid .artwork-card:nth-child(1) img { object-position: center 40%; }
+  /* Portrait Studies */
+  .featured-work-grid .artwork-card:nth-child(2) img { object-position: center 50%; }
+  /* Mixed Media */
+  .featured-work-grid .artwork-card:nth-child(3) img { object-position: center 60%; }
+  /* Commissions */
+  .featured-work-grid .artwork-card:nth-child(4) img { object-position: center 60%; }
 
   /* Buttons full width on mobile */
   .btn-primary, .btn-outline {
