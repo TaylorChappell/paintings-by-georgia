@@ -1215,6 +1215,15 @@ button {
   .featured-work-grid { grid-template-columns: 1fr !important; }
   .etsy-footer-grid { grid-template-columns: 1fr !important; }
 
+  /* Pet Portraits - pull image down so face shows */
+  .featured-work-grid .artwork-card:nth-child(1) img {
+    object-position: center 30%;
+  }
+  /* Commissions - push image up */
+  .featured-work-grid .artwork-card:nth-child(4) img {
+    object-position: center 5%;
+  }
+
   /* Buttons full width on mobile */
   .btn-primary, .btn-outline {
     width: 100%;
