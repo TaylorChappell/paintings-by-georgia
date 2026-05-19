@@ -484,13 +484,13 @@ button {
    ============================================================ */
 
 /* Pet Portraits */
-.featured-work-grid .artwork-card:nth-child(1) img { object-position: center 40%; }
-/* Portrait Studies */
-.featured-work-grid .artwork-card:nth-child(2) img { object-position: center 60%; }
+.featured-work-grid .artwork-card:nth-child(1) img { object-position: center 50%; }
+/* Portraits */
+.featured-work-grid .artwork-card:nth-child(2) img { object-position: center 50%; }
 /* Mixed Media */
-.featured-work-grid .artwork-card:nth-child(3) img { object-position: center 78%; }
+.featured-work-grid .artwork-card:nth-child(3) img { object-position: center 50%; }
 /* Commissions */
-.featured-work-grid .artwork-card:nth-child(4) img { object-position: center 65%; }
+.featured-work-grid .artwork-card:nth-child(4) img { object-position: center 50%; }
 
 .artwork-card-body {
   padding: 1.2rem 1.4rem 1.4rem;
@@ -1235,13 +1235,13 @@ button {
   .etsy-footer-grid { grid-template-columns: 1fr !important; }
 
   /* Pet Portraits - show face, bring image up */
-  .featured-work-grid .artwork-card:nth-child(1) img { object-position: center 40%; }
-  /* Portrait Studies */
+  .featured-work-grid .artwork-card:nth-child(1) img { object-position: center 12%; }
+  /* Portraits */
   .featured-work-grid .artwork-card:nth-child(2) img { object-position: center 50%; }
   /* Mixed Media */
-  .featured-work-grid .artwork-card:nth-child(3) img { object-position: center 60%; }
+  .featured-work-grid .artwork-card:nth-child(3) img { object-position: center 50%; }
   /* Commissions */
-  .featured-work-grid .artwork-card:nth-child(4) img { object-position: center 60%; }
+  .featured-work-grid .artwork-card:nth-child(4) img { object-position: center top; }
 
   /* Buttons full width on mobile */
   .btn-primary, .btn-outline {

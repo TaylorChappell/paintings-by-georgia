@@ -75,7 +75,7 @@ const featuredCards = [
     img: '/assets/male-portrait.png',
     alt: 'Portrait study',
     icon: <PortraitIcon />,
-    title: 'Portrait Studies',
+    title: 'Portraits',
     desc: 'Watercolor portraits full of character and emotion.',
   },
   {

@@ -74,7 +74,7 @@ const products = [
   {
     img: '/assets/male-portrait.png',
     alt: 'Portrait study print',
-    title: 'Portrait Study',
+    title: 'Portrait',
     desc: 'Watercolour portrait study print from an original piece.',
     price: '£28.00+',
   },
