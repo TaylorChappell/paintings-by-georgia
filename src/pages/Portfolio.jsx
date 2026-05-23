@@ -52,6 +52,13 @@ const portfolioItems = [
     objectPos: 'center 70%',
   },
   {
+    src:       '/assets/TwoDogs-Painting.png',
+    alt:       'Parrot painting',
+    category:  'Pets',
+    height:    400,
+    objectPos: 'center 70%',
+  },
+  {
     src:       '/assets/Daredevil-Portrait.png',
     alt:       'Daredevil portrait on canvas',
     category:  ['Portraits', 'Canvas'],

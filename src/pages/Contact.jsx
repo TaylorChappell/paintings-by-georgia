@@ -101,7 +101,7 @@ export default function Contact() {
                   boxShadow: '0 8px 32px rgba(47,41,39,0.15)',
                   aspectRatio: '4/5',
                 }}>
-                  <img src="/assets/horse-painting.png" alt="Horse painting" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                  <img src="/assets/TwoDogs-Painting.png" alt="Horse painting" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                 </div>
                 <div style={{
                   position: 'absolute', inset: 0, zIndex: 0, pointerEvents: 'none',
