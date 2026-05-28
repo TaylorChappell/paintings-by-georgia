@@ -41,14 +41,36 @@ const GlobeIcon = () => (
 export default function Contact() {
   const [form, setForm] = useState({ name: '', email: '', subject: '', message: '' })
   const [submitted, setSubmitted] = useState(false)
+  const [sending, setSending] = useState(false)
+  const [error, setError] = useState(null)
 
   const handleChange = e => {
     setForm({ ...form, [e.target.name]: e.target.value })
   }
 
-  const handleSubmit = e => {
+  const handleSubmit = async e => {
     e.preventDefault()
-    setSubmitted(true)
+    setSending(true)
+    setError(null)
+
+    try {
+      const res = await fetch('https://formspree.io/f/xaqkvqyd', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify(form),
+      })
+
+      if (res.ok) {
+        setSubmitted(true)
+        setForm({ name: '', email: '', subject: '', message: '' })
+      } else {
+        setError('Something went wrong. Please try again or email directly.')
+      }
+    } catch {
+      setError('Something went wrong. Please try again or email directly.')
+    } finally {
+      setSending(false)
+    }
   }
 
   return (
@@ -71,7 +93,6 @@ export default function Contact() {
             </div>
 
             <div style={{ flex: 1 }}>
-              {/* Small 2-image collage */}
               <div style={{ position: 'relative', height: 340 }}>
                 <div style={{
                   position: 'absolute',
@@ -170,8 +191,16 @@ export default function Contact() {
                       rows={5}
                     />
                   </div>
-                  <button type="submit" className="btn-primary" style={{ width: '100%', justifyContent: 'center', fontSize: '1rem', padding: '1rem' }}>
-                    Send Message
+                  {error && (
+                    <p style={{ color: '#b91c1c', fontSize: '0.9rem', marginBottom: '0.75rem' }}>{error}</p>
+                  )}
+                  <button
+                    type="submit"
+                    className="btn-primary"
+                    style={{ width: '100%', justifyContent: 'center', fontSize: '1rem', padding: '1rem' }}
+                    disabled={sending}
+                  >
+                    {sending ? 'Sending...' : 'Send Message'}
                   </button>
                 </form>
               ) : (
@@ -225,7 +254,6 @@ export default function Contact() {
                 </div>
               </div>
 
-              {/* Small floral */}
               <div style={{ marginTop: '1rem', display: 'flex', justifyContent: 'center' }}>
                 <FloralDivider variant={1} />
               </div>
